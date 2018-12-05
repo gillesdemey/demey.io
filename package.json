@@ -1,0 +1,54 @@
+{
+  "name": "demey.io",
+  "description": "demey.io website",
+  "version": "1.0.0",
+  "author": "Gilles De Mey <gilles.de.mey@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.3",
+    "@emotion/styled": "^10.0.3",
+    "emotion": "^10.0.3",
+    "emotion-server": "^10.0.3",
+    "gatsby": "^2.0.19",
+    "gatsby-plugin-emotion": "^3.0.0",
+    "gatsby-plugin-feed": "^2.0.8",
+    "gatsby-plugin-google-analytics": "^2.0.5",
+    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-prefetch-google-fonts": "^1.1.1",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sharp": "^2.0.6",
+    "gatsby-remark-copy-linked-files": "^2.0.5",
+    "gatsby-remark-images": "^2.0.4",
+    "gatsby-remark-prismjs": "^3.0.0",
+    "gatsby-remark-smartypants": "^2.0.5",
+    "gatsby-source-filesystem": "^2.0.2",
+    "gatsby-transformer-remark": "^2.1.6",
+    "gatsby-transformer-sharp": "^2.1.3",
+    "prismjs": "^1.15.0",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-plugin-react": "^7.11.1",
+    "gh-pages": "^1.2.0",
+    "standard": "^12.0.1"
+  },
+  "homepage": "https://demey.io",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gillesdemey/demey-io.git"
+  },
+  "scripts": {
+    "dev": "gatsby develop",
+    "lint": "standard",
+    "test": "yarn run lint",
+    "start": "yarn run develop",
+    "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  }
+}
