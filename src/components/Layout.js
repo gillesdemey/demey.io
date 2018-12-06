@@ -10,9 +10,7 @@ class Layout extends React.Component {
 
     return (
       <Fragment>
-        <Global styles={css`
-
-        `} />
+        <Global styles={css``} />
         <div css={base}>
           <Header title={title} />
           <div css={wrapper}>

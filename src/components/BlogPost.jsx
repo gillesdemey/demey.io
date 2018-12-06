@@ -2,8 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 
-import Layout from '../components/Layout'
-import { base } from './blog-post.styles'
+import Layout from './Layout'
+import { base, title as titleStyle } from './BlogPost.styles'
 
 class BlogPostTemplate extends React.Component {
   render () {
@@ -20,7 +20,7 @@ class BlogPostTemplate extends React.Component {
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
         <div css={base}>
-          <h1>{post.frontmatter.title}</h1>
+          <h1 css={titleStyle}>{post.frontmatter.title}</h1>
           <p>
             {post.frontmatter.date}
           </p>

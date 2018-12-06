@@ -14,9 +14,6 @@ const wrapper = css`
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather';
     font-weight: 900;
-    font-size: 1.5em;
-
-    color: #7158e2;
 
     > a { text-decoration: none; color: inherit; }
   }
