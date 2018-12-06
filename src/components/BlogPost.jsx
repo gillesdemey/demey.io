@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 
 import Layout from './Layout'
-import { base, title as titleStyle } from './BlogPost.styles'
+import { base, title as titleStyle, date, florette } from './BlogPost.styles'
 
 class BlogPostTemplate extends React.Component {
   render () {
@@ -21,11 +21,11 @@ class BlogPostTemplate extends React.Component {
         />
         <div css={base}>
           <h1 css={titleStyle}>{post.frontmatter.title}</h1>
-          <p>
+          <div css={date}>
             {post.frontmatter.date}
-          </p>
+          </div>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr />
+          <div css={florette}>⏟</div>
         </div>
 
         <ul>

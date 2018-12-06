@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 
 import Layout from './Layout'
-import { postItem, date } from './List.styles'
+import { postItem, date, wrapper } from './List.styles'
 
 class BlogIndex extends React.Component {
   render () {
@@ -19,20 +19,22 @@ class BlogIndex extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div css={postItem} key={node.fields.slug}>
-              <h3>
-                <Link to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small css={date}>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
-          )
-        })}
+        <div css={wrapper}>
+          {posts.map(({ node }) => {
+            const title = node.frontmatter.title || node.fields.slug
+            return (
+              <div css={postItem} key={node.fields.slug}>
+                <h3>
+                  <Link to={node.fields.slug}>
+                    {title}
+                  </Link>
+                </h3>
+                <small css={date}>{node.frontmatter.date}</small>
+                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              </div>
+            )
+          })}
+        </div>
       </Layout>
     )
   }
