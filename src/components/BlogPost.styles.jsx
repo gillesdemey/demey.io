@@ -76,9 +76,47 @@ const florette = css`
   color: rgba(0, 0, 0, 0.1);
 `
 
+const nextPrevious = css`
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  a {
+    background: rgba(232, 67, 147, 0.2);
+    border-bottom: solid 1px black;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background: rgba(232, 67, 147, 0.35);
+  }
+`
+
+const prevOrNext = css`
+  flex: 1;
+  font-family: 'Montserrat';
+  font-weight: 900;
+
+  display: flex;
+  flex-direction: column;
+`
+
+const previous = css`
+  > a { align-self: flex-start; }
+`
+
+const next = css`
+  > a { align-self: flex-end; }
+`
+
 export {
   base,
   title,
   date,
-  florette
+  florette,
+  nextPrevious,
+  prevOrNext,
+  previous,
+  next
 }

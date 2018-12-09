@@ -1,20 +1,11 @@
 import { css } from '@emotion/core'
 
 const postItem = css`
-  /* title */
-  > h3 {
-    font-size: 1.5em;
-    font-weight: 900;
-    margin-bottom: 0em;
-    color: #e84393;
-  }
-
   margin-bottom: 3rem;
 `
 
 const date = css`
   font-family: 'Montserrat';
-  font-weight: 900;
   font-size: 0.85em;
 `
 
@@ -22,8 +13,30 @@ const wrapper = css`
   margin-top: 4rem;
 `
 
+const title = css`
+  line-height: 1.2em;
+
+  font-size: 1.5em;
+  font-weight: 900;
+  margin-bottom: 0em;
+
+  font-family: 'Montserrat';
+
+  a {
+    background: rgba(232, 67, 147, 0.2);
+    border-bottom: solid 1px black;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background: rgba(232, 67, 147, 0.35);
+  }
+`
+
 export {
   wrapper,
   postItem,
-  date
+  date,
+  title
 }

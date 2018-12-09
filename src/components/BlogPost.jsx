@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 
 import Layout from './Layout'
-import { base, title as titleStyle, date, florette } from './BlogPost.styles'
+import { base, title as titleStyle, date, florette, nextPrevious, prevOrNext, next as nextStyle, previous as previousStyle } from './BlogPost.styles'
 
 class BlogPostTemplate extends React.Component {
   render () {
@@ -28,24 +28,22 @@ class BlogPostTemplate extends React.Component {
           <div css={florette}>⏟</div>
         </div>
 
-        <ul>
-          <li>
-            {
-              previous &&
-              <Link to={previous.fields.slug} rel='prev'>
-                ← {previous.frontmatter.title}
-              </Link>
-            }
-          </li>
-          <li>
-            {
-              next &&
-              <Link to={next.fields.slug} rel='next'>
-                {next.frontmatter.title} →
-              </Link>
-            }
-          </li>
-        </ul>
+        <div css={nextPrevious}>
+          <div css={[prevOrNext, previousStyle]}>
+          {previous &&
+            <Link to={previous.fields.slug} rel='prev'>
+              ⬅️ {previous.frontmatter.title}
+            </Link>
+          }
+          </div>
+          <div css={[prevOrNext, nextStyle]}>
+          {next &&
+            <Link to={next.fields.slug} rel='next'>
+              {next.frontmatter.title} ➡️
+            </Link>
+          }
+          </div>
+        </div>
       </Layout>
     )
   }
