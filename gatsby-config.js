@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'The Digital Twins',
+    title: 'Gilles & Michiel',
     author: 'Gilles & Michiel De Mey',
     description: 'The personal blog of the digital twins',
     siteUrl: 'https://gatsby-starter-blog-demo.netlify.com/'
@@ -24,7 +24,12 @@ module.exports = {
               maxWidth: 590
             }
           },
-          'gatsby-remark-prismjs',
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              noInlineHighlight: true
+            }
+          },
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants'
         ]
@@ -43,7 +48,8 @@ module.exports = {
       options: {
         fonts: [
           { family: `Merriweather`, variants: [`400`, `900`] },
-          { family: `Montserrat`, variants: [`400`, `900`] }
+          { family: `Montserrat`, variants: [`400`, `900`] },
+          { family: `Source Code Pro` }
         ]
       }
     },

@@ -1,7 +1,7 @@
 import { css } from '@emotion/core'
 
 const base = css`
-  font-size: 1rem;
+  font-size: 1em;
   font-family: 'Merriweather';
   color: rgba(0, 0, 0, 0.9);
 
@@ -9,8 +9,19 @@ const base = css`
     font-family: 'Montserrat';
   }
 
+  h1 {
+    line-height: 1em;
+  }
+
   a {
-    color: #e84393;
+    background: rgba(232, 67, 147, 0.2);
+    border-bottom: solid 1px black;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background: rgba(232, 67, 147, 0.35);
   }
 
   p {
@@ -20,6 +31,19 @@ const base = css`
 
   ul {
     margin: 0;
+    line-height: 1.5em;
+  }
+
+  code {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    background: rgba(206, 246, 255);
+  }
+
+  pre > code {
+    font-weight: normal;
+    background: none;
+    font-size: 16px;
   }
 
   blockquote {
@@ -28,6 +52,10 @@ const base = css`
     border-left: solid 5px rgba(0, 0, 0, 0.1);
     color: rgba(0, 0, 0, 0.75);
     font-style: italic;
+  }
+
+  img {
+    max-width: 100%;
   }
 `
 
