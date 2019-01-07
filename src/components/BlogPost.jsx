@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 
 import Layout from './Layout'
-import { base, title as titleStyle, date, florette, nextPrevious, prevOrNext, next as nextStyle, previous as previousStyle } from './BlogPost.styles'
+import { base, title as titleStyle, date as dateStyle, florette, nextPrevious, prevOrNext, next as nextStyle, previous as previousStyle } from './BlogPost.styles'
 
 class BlogPostTemplate extends React.Component {
   render () {
@@ -12,17 +12,19 @@ class BlogPostTemplate extends React.Component {
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
 
+    const { title, author, date } = post.frontmatter
+
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
-          title={`${post.frontmatter.title} | ${siteTitle}`}
+          title={`${title} | ${siteTitle}`}
         />
         <div css={base}>
-          <h1 css={titleStyle}>{post.frontmatter.title}</h1>
-          <div css={date}>
-            {post.frontmatter.date}
+          <h1 css={titleStyle}>{title}</h1>
+          <div css={dateStyle}>
+            Written by {author} on {date}
           </div>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           <div css={florette}>⏟</div>
@@ -65,6 +67,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        author
         date(formatString: "MMMM DD, YYYY")
       }
     }

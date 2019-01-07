@@ -6,7 +6,7 @@ const postItem = css`
 
 const date = css`
   font-family: 'Montserrat';
-  font-size: 0.85em;
+  font-size: 0.75em;
 `
 
 const wrapper = css`

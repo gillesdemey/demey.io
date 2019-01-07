@@ -13,8 +13,11 @@ const base = css`
     line-height: 1em;
   }
 
-  a {
+  a, em {
     background: rgba(232, 67, 147, 0.2);
+  }
+
+  a {
     border-bottom: solid 1px black;
     color: inherit;
     text-decoration: none;
@@ -57,6 +60,16 @@ const base = css`
   img {
     max-width: 100%;
   }
+
+  hr {
+    border: none;
+    border-top: solid 5px rgba(0,0,0,0.1);
+  }
+
+  .footnotes {
+    font-size: 0.85em;
+    p { display: inline-block; margin: 0.2em 0; }
+  }
 `
 
 const title = css`
@@ -65,7 +78,10 @@ const title = css`
   margin-bottom: 0;
 `
 
-const date = css``
+const date = css`
+  margin: 0.5em 0;
+  font-size: 0.85em;
+`
 
 const florette = css`
   font-size: 8em;

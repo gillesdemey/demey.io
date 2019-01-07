@@ -1,5 +1,6 @@
 ---
 title: Bulletproof REST APIs  —  with Jest Snapshots
+author: Gilles De Mey
 date: "2018-02-19T23:00:00.000Z"
 teaser: "How to automatically test your REST API, so you can avoid nasty surprises by accidentally breaking your interface 😱."
 ---

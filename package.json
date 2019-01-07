@@ -7,7 +7,7 @@
     "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.3",
+    "@emotion/core": "^10.0.6",
     "@emotion/styled": "^10.0.3",
     "emotion": "^10.0.3",
     "emotion-server": "^10.0.3",
@@ -21,6 +21,7 @@
     "gatsby-plugin-sharp": "^2.0.6",
     "gatsby-remark-copy-linked-files": "^2.0.5",
     "gatsby-remark-images": "^2.0.4",
+    "gatsby-remark-numbered-footnotes": "^1.0.0",
     "gatsby-remark-prismjs": "^3.0.0",
     "gatsby-remark-smartypants": "^2.0.5",
     "gatsby-source-filesystem": "^2.0.2",
