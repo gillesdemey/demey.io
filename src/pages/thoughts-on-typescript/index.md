@@ -64,7 +64,7 @@ Using your existing tools and libraries will require some digging around and *a 
 
 Refactoring the application was easy and simple, the compiler helped us out when we were moving stuff around or splitting things into multiple layers.
 
-TypeScript somewhat twisted our arm and forced us to think about our data types and how they should flow through the application — an somewhat unpleasant experience, but we feel like it contributed to a better design.
+TypeScript somewhat twisted our arm and forced us to think about our data types and how they should flow through the application — a somewhat unpleasant experience, but we feel like it contributed to a better design.
 
 ## Additional thoughts
 
@@ -72,7 +72,7 @@ TypeScript somewhat twisted our arm and forced us to think about our data types 
 
 To some folks TypeScript seems to be mostly analogous to Object Oriented programming. It's not.
 
-Simply because you can now use Interface and Generics does not mean that you should. We write mostly functional code, unless we have a good reason to break that rule.
+Simply because you can now use Interfaces and Generics does not mean that you should. We write mostly functional code, unless we have a good reason to break that rule.
 
 We went in not caring too much about the type safety of TypeScript.
 Our services are built to fail fast, properly handle failure of other services and are replicated a number times across our Kubernetes cluster.
