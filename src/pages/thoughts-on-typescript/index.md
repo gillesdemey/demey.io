@@ -32,7 +32,7 @@ TypeScript does not help with handling and validating types at [runtime boundari
 
 Most of the existing solutions are complicated and feel very foreign to our JavaScript developers.
 
-We've settled on using an additional tool[^typescript-json-schema] to convert our TypeScript definitions to JSON schemas and use [ajv](https://github.com/YousefED/typescript-json-schema) to validate incoming HTTP and RPC requests.
+We've settled on using an additional tool[^typescript-json-schema] to convert our TypeScript definitions to JSON schemas and use [ajv](https://github.com/epoberezkin/ajv) to validate incoming HTTP and RPC requests.
 
 Admittedly this is a non-goal for the TypeScript project, but I'd rather not define my type definitions more than once, sadly we still need to invoke *an additional tool* to keep our JSON schemas in sync with our type definitions.
 
