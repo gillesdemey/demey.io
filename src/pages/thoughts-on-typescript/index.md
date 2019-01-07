@@ -13,6 +13,7 @@ This service we wrote is:
 
 * Not a browser application (Node)
 * Quite small
+* Team of 2
 * Important, deals with authorization and access control
 
 Let's talk about some of the good, the bad and the ugly parts, in reverse! 🌀
