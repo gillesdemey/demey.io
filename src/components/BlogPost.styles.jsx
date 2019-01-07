@@ -13,11 +13,8 @@ const base = css`
     line-height: 1em;
   }
 
-  a, em {
-    background: rgba(232, 67, 147, 0.2);
-  }
-
   a {
+    background: rgba(232, 67, 147, 0.2);
     border-bottom: solid 1px black;
     color: inherit;
     text-decoration: none;
