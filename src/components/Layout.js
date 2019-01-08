@@ -5,8 +5,7 @@ import { base, wrapper } from './Layout.style'
 
 class Layout extends React.Component {
   render () {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
+    const { title, children } = this.props
 
     return (
       <Fragment>
