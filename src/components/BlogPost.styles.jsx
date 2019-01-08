@@ -13,6 +13,15 @@ const base = css`
     line-height: 1em;
   }
 
+  a.gatsby-resp-image-link {
+    background: none;
+    border-bottom: none;
+  }
+
+  a.gatsby-resp-image-link:hover {
+    background: none;
+  }
+
   a {
     background: rgba(232, 67, 147, 0.2);
     border-bottom: solid 1px black;
