@@ -47,7 +47,10 @@ set terminal png size 1000,20
 set yrange [0:1]
 set format x ""
 set format y ""
+unset grid
+unset key
 unset tics
+unset border
 set lmargin 0
 set rmargin 0
 plot 'spread.csv' with impulses lw 0 notitle
