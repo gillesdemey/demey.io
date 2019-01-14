@@ -44,16 +44,6 @@ module.exports = {
         // trackingId: `ADD YOUR TRACKING ID HERE`,
       }
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          { family: `Merriweather`, variants: [`400`, `900`] },
-          { family: `Montserrat`, variants: [`400`, `900`] },
-          { family: `Source Code Pro` }
-        ]
-      }
-    },
     `gatsby-plugin-feed`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-offline`,

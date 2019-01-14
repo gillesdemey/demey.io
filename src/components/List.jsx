@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 
 import Layout from './Layout'
+import Head from './Head'
 import { postItem, date as dateStyle, wrapper, title as postTitle } from './List.styles'
 
 class BlogIndex extends React.Component {
@@ -19,6 +20,7 @@ class BlogIndex extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
+        <Head />
         <div css={wrapper}>
           {posts.map(({ node }) => {
             const { title, teaser, date, author } = node.frontmatter

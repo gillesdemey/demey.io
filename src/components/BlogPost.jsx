@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 
 import Layout from './Layout'
+import Head from './Head'
 import { base, title as titleStyle, date as dateStyle, florette, nextPrevious, prevOrNext, next as nextStyle, previous as previousStyle } from './BlogPost.styles'
 
 class BlogPostTemplate extends React.Component {
@@ -21,6 +22,7 @@ class BlogPostTemplate extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${title} | ${siteTitle}`}
         />
+        <Head />
         <div css={base}>
           <h1 css={titleStyle}>{title}</h1>
           <div css={dateStyle}>
