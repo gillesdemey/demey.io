@@ -79,7 +79,7 @@ const base = css`
 `
 
 const title = css`
-  font-size: 3.5em;
+  font-size: 3.2em;
   font-family: 'Montserrat';
   margin-bottom: 0;
 `
