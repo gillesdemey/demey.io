@@ -13,13 +13,20 @@ class BlogPostTemplate extends React.Component {
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
 
-    const { title, author, date } = post.frontmatter
+    const { title, author, date, teaser } = post.frontmatter
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
+          meta={[
+            { name: 'description', content: siteDescription },
+            { property: 'og:type', content: 'article' },
+            { property: 'article:published_time', content: date },
+            { property: 'article:author', content: author },
+            { property: 'og:title', content: title },
+            { property: 'og:description', content: teaser }
+          ]}
           title={`${title} | ${siteTitle}`}
         />
         <Head />
@@ -71,6 +78,7 @@ export const pageQuery = graphql`
         title
         author
         date(formatString: "MMMM DD, YYYY")
+        teaser
       }
     }
   }

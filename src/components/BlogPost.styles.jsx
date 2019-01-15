@@ -43,16 +43,18 @@ const base = css`
     line-height: 1.5em;
   }
 
+  /* inline code and code block styles */
   code {
     font-family: 'Source Code Pro', monospace;
     font-weight: bold;
-    background: rgba(206, 246, 255);
+    background: rgba(206, 246, 255, 1);
   }
 
+  /* code block styles */
   pre > code {
     font-weight: normal;
     background: none;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   blockquote {

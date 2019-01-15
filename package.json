@@ -44,7 +44,7 @@
     "url": "git+https://github.com/gillesdemey/demey-io.git"
   },
   "scripts": {
-    "dev": "gatsby develop",
+    "dev": "gatsby develop --open",
     "lint": "standard",
     "test": "yarn run lint",
     "start": "yarn run develop",
