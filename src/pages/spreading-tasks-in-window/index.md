@@ -61,5 +61,3 @@ Which yields the following plot:
 ![plot.png](./plot.png)
 
 As you can see the random distribution isn't perfect, but good enough.
-
-Mathematical! 🤓
