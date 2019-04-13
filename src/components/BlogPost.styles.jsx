@@ -74,7 +74,7 @@ const base = css`
 
   hr {
     border: none;
-    border-top: solid 5px rgba(0,0,0,0.1);
+    border-top: solid 1px rgba(0,0,0,0.1);
   }
 
   .footnotes {
