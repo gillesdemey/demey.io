@@ -10,7 +10,7 @@ class Layout extends React.Component {
     return (
       <Fragment>
         <Global styles={css`
-          body { font-size: 18px; }
+          body { font-size: 16px; }
         `} />
         <div css={base}>
           <Header title={title} />
