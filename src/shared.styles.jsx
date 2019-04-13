@@ -1,17 +1,27 @@
 import { css } from '@emotion/core'
-import { lighten } from 'polished'
+import { tint } from 'polished'
+
+const gradient1 = '#ee0979'
+const gradient2 = '#ff6a00'
 
 const colors = {
   yellow: '#f1c40f',
   lightYellow: '#ffeaa7',
   lightBlue: 'rgba(206, 246, 255, 1)',
-  lightLinearGradient: `linear-gradient(to right, ${lighten(0.4, '#ee0979')}, ${lighten(0.4, '#ff6a00')})`,
-  linearGradient: 'linear-gradient(to right, #ee0979, #ff6a00)'
+  lightLinearGradient: `linear-gradient(to right, ${tint(0.85, gradient1)}, ${tint(0.85, gradient2)})`,
+  linearGradient: `linear-gradient(to right, ${gradient1}, ${gradient2})`
 }
+
+const serif = 'Montserrat'
+const sansSerif = 'Domine'
 
 const link = css`
   color: inherit;
   text-decoration: none;
+  /* background: linear-gradient(120deg, #FFEB3B 0%, #FFEB3B 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%; */
   border-bottom: solid 2px ${colors.yellow};
   /* text-decoration: underline; */
   /* text-decoration-color: ${colors.yellow}; */
@@ -48,5 +58,7 @@ export {
   colors,
   gradientBackground,
   link,
-  textClip
+  textClip,
+  serif,
+  sansSerif
 }

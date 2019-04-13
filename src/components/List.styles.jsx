@@ -1,12 +1,12 @@
 import { css } from '@emotion/core'
-import { colors, textClip } from '../shared.styles.jsx'
+import { colors, serif, textClip } from '../shared.styles.jsx'
 
 const postItem = css`
   margin-bottom: 3rem;
 `
 
 const date = css`
-  font-family: 'Montserrat';
+  font-family: ${serif};
   font-size: 0.75em;
 `
 
@@ -21,7 +21,7 @@ const title = css`
   font-weight: 900;
   margin-bottom: 0em;
 
-  font-family: 'Montserrat';
+  font-family: ${serif};
 
   a {
     ${textClip(colors.linearGradient)};

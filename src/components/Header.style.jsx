@@ -1,8 +1,9 @@
 import { css } from '@emotion/core'
+import { serif } from '../shared.styles.jsx'
 
 const base = css`
   font-size: 1.5em;
-  font-family: 'Montserrat';
+  font-family: ${serif};
   font-weight: 900;
   color: black;
 

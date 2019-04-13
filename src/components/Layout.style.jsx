@@ -1,4 +1,5 @@
 import { css } from '@emotion/core'
+import { sansSerif } from '../shared.styles.jsx'
 
 const base = css`
   max-width: 42rem;
@@ -7,7 +8,7 @@ const base = css`
 
 const wrapper = css`
   p {
-    font-family: 'Merriweather';
+    font-family: ${sansSerif};
     font-size: 1em;
   }
 `

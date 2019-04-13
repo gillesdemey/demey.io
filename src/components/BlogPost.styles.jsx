@@ -1,16 +1,16 @@
 import { css } from '@emotion/core'
-import { link, textClip, colors, gradientBackground } from '../shared.styles.jsx'
+import { link, textClip, colors, gradientBackground, serif, sansSerif } from '../shared.styles.jsx'
 
 const base = css`
   font-size: 1em;
   line-height: 1.6em;
-  font-family: 'Merriweather';
+  font-family: ${sansSerif};
   overflow-wrap: break-word;
 
   color: rgba(0, 0, 0, 0.9);
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat';
+    font-family: ${serif};
     ${textClip(colors.linearGradient)};
   }
 
@@ -92,7 +92,7 @@ const base = css`
 
 const title = css`
   font-size: 3.2em;
-  font-family: 'Montserrat';
+  font-family: ${serif};
   margin-bottom: 0;
 `
 
@@ -100,7 +100,7 @@ const date = css`
   margin: 0.5em 0;
   font-size: 0.85em;
 
-  font-family: 'Montserrat';
+  font-family: ${serif};
   font-weight: 900;
 `
 
@@ -114,17 +114,12 @@ const nextPrevious = css`
   display: flex;
   align-items: center;
   width: 100%;
-
-  a {
-    ${link};
-  }
 `
 
 const prevOrNext = css`
+  ${textClip(colors.linearGradient)};
+  font-family: 'Merriweather';
   flex: 1;
-  font-family: 'Montserrat';
-  font-weight: 900;
-
   display: flex;
   flex-direction: column;
 `
