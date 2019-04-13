@@ -114,6 +114,7 @@ const nextPrevious = css`
   display: flex;
   align-items: center;
   width: 100%;
+  margin-bottom: 3rem;
 `
 
 const prevOrNext = css`
