@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gilles & Michiel',
+    title: 'Gilles & Michiel De Mey',
     author: 'Gilles & Michiel De Mey',
     description: 'The personal blog of the digital twins',
     siteUrl: 'https://gatsby-starter-blog-demo.netlify.com/'

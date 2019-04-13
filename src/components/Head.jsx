@@ -7,5 +7,11 @@ export default () => (
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,900' rel='stylesheet' />
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,900' rel='stylesheet' />
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' />
+    <style>{`
+      body, html {
+        font-size: 16px;
+      }`
+    }
+    </style>
   </Helmet>
 )

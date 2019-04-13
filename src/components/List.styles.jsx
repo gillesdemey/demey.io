@@ -1,4 +1,5 @@
 import { css } from '@emotion/core'
+import { colors, link, textClip } from '../shared.styles.jsx'
 
 const postItem = css`
   margin-bottom: 3rem;
@@ -23,13 +24,8 @@ const title = css`
   font-family: 'Montserrat';
 
   a {
-    background: rgba(232, 67, 147, 0.2);
-    color: inherit;
-    text-decoration: none;
-  }
-
-  a:hover {
-    background: rgba(232, 67, 147, 0.35);
+    ${textClip(colors.linearGradient)};
+    text-decoration-color: transparent;
   }
 `
 

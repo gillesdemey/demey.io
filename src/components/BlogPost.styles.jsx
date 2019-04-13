@@ -1,16 +1,21 @@
 import { css } from '@emotion/core'
+import { link, textClip, colors } from '../shared.styles.jsx'
 
 const base = css`
   font-size: 1em;
+  line-height: 1.6em;
   font-family: 'Merriweather';
+  overflow-wrap: break-word;
+
   color: rgba(0, 0, 0, 0.9);
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat';
+    ${textClip(colors.linearGradient)};
   }
 
   h1 {
-    line-height: 1em;
+    line-height: 1.1em;
   }
 
   a.gatsby-resp-image-link {
@@ -23,14 +28,13 @@ const base = css`
   }
 
   a {
-    background: rgba(232, 67, 147, 0.2);
-    border-bottom: solid 1px black;
-    color: inherit;
-    text-decoration: none;
-  }
+    ${link};
 
-  a:hover {
-    background: rgba(232, 67, 147, 0.35);
+    background: #ffeaa7
+
+    &:hover {
+      background: shade(0.2, '#ffeaa7');
+    }
   }
 
   p {
@@ -46,8 +50,10 @@ const base = css`
   /* inline code and code block styles */
   code {
     font-family: 'Source Code Pro', monospace;
-    font-weight: bold;
-    background: rgba(206, 246, 255, 1);
+    background: ${colors.codeLinearGradient};
+
+    padding: 0.1em 0.25em;
+    font-size: 0.9em;
   }
 
   /* code block styles */
@@ -78,6 +84,13 @@ const base = css`
     font-size: 0.85em;
     p { display: inline-block; margin: 0.2em 0; }
   }
+
+  .footnote-ref {
+    display: inline;
+
+    padding: 0.15em;
+    font-size: 0.85em;
+  }
 `
 
 const title = css`
@@ -92,10 +105,7 @@ const date = css`
 `
 
 const florette = css`
-  font-size: 8em;
-  margin-top: 6rem;
-  line-height: 0.1em;
-  text-align: center;
+  margin: 3rem 0;
 
   color: rgba(0, 0, 0, 0.1);
 `
@@ -106,14 +116,7 @@ const nextPrevious = css`
   width: 100%;
 
   a {
-    background: rgba(232, 67, 147, 0.2);
-    border-bottom: solid 1px black;
-    color: inherit;
-    text-decoration: none;
-  }
-
-  a:hover {
-    background: rgba(232, 67, 147, 0.35);
+    ${link};
   }
 `
 
