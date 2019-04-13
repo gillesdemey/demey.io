@@ -7,8 +7,6 @@ const base = css`
   font-family: ${sansSerif};
   overflow-wrap: break-word;
 
-  color: rgba(0, 0, 0, 0.9);
-
   h1, h2, h3, h4, h5, h6 {
     font-family: ${serif};
     ${textClip(colors.linearGradient)};
