@@ -9,7 +9,7 @@ export default () => (
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' />
     <style>{`
       body, html {
-        font-size: 16px;
+        font-size: 16px !important;
       }`
     }
     </style>

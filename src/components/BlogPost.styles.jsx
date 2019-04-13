@@ -1,5 +1,5 @@
 import { css } from '@emotion/core'
-import { link, textClip, colors } from '../shared.styles.jsx'
+import { link, textClip, colors, gradientBackground } from '../shared.styles.jsx'
 
 const base = css`
   font-size: 1em;
@@ -49,11 +49,8 @@ const base = css`
 
   /* inline code and code block styles */
   code {
+    ${gradientBackground(colors.lightLinearGradient)};
     font-family: 'Source Code Pro', monospace;
-    background: ${colors.codeLinearGradient};
-
-    padding: 0.1em 0.25em;
-    font-size: 0.9em;
   }
 
   /* code block styles */
@@ -102,6 +99,9 @@ const title = css`
 const date = css`
   margin: 0.5em 0;
   font-size: 0.85em;
+
+  font-family: 'Montserrat';
+  font-weight: 900;
 `
 
 const florette = css`

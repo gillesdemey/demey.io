@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from './Layout'
 import Head from './Head'
-import { base, title as titleStyle, date as dateStyle, florette, nextPrevious, prevOrNext, next as nextStyle, previous as previousStyle } from './BlogPost.styles'
+import { base, title as titleStyle, date as dateStyle, florette, nextPrevious, prevOrNext, next as nextStyle, previous as previousStyle } from './BlogPost.styles.jsx'
 import { colors, textClip } from '../shared.styles.jsx'
 
 class BlogPostTemplate extends React.Component {

@@ -5,14 +5,16 @@ const colors = {
   yellow: '#f1c40f',
   lightYellow: '#ffeaa7',
   lightBlue: 'rgba(206, 246, 255, 1)',
-  codeLinearGradient: `linear-gradient(to right, ${lighten(0.2, '#ff5f6d')}, ${lighten(0.2, '#ffc371')})`,
-  linearGradient: 'linear-gradient(to right, #ff5f6d, #ffc371)'
+  lightLinearGradient: `linear-gradient(to right, ${lighten(0.4, '#ee0979')}, ${lighten(0.4, '#ff6a00')})`,
+  linearGradient: 'linear-gradient(to right, #ee0979, #ff6a00)'
 }
 
 const link = css`
   color: inherit;
-  text-decoration: underline;
-  text-decoration-color: ${colors.yellow};
+  text-decoration: none;
+  border-bottom: solid 2px ${colors.yellow};
+  /* text-decoration: underline; */
+  /* text-decoration-color: ${colors.yellow}; */
 
   &:hover {
     /* code link  */
@@ -34,8 +36,17 @@ const textClip = (gradient) => css`
   box-decoration-break: clone;
 `
 
+const gradientBackground = (gradient) => css`
+  background: ${gradient};
+  border-radius: 0.25em;
+
+  padding: 0.1em 0.25em;
+  font-size: 0.9em;
+`
+
 export {
   colors,
+  gradientBackground,
   link,
   textClip
 }
