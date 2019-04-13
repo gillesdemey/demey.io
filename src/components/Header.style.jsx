@@ -1,5 +1,4 @@
 import { css } from '@emotion/core'
-import { colors, textClip } from '../shared.styles.jsx'
 
 const base = css`
   font-size: 1.5em;

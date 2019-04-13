@@ -9,7 +9,6 @@ const colors = {
   linearGradient: 'linear-gradient(to right, #ff5f6d, #ffc371)'
 }
 
-
 const link = css`
   color: inherit;
   text-decoration: underline;

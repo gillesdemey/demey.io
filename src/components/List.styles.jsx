@@ -1,5 +1,5 @@
 import { css } from '@emotion/core'
-import { colors, link, textClip } from '../shared.styles.jsx'
+import { colors, textClip } from '../shared.styles.jsx'
 
 const postItem = css`
   margin-bottom: 3rem;
