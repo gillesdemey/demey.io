@@ -62,8 +62,8 @@ const base = css`
     margin-left: 0;
     padding-left: 1em;
     border-left: solid 5px rgba(0, 0, 0, 0.1);
-    color: rgba(0, 0, 0, 0.75);
     font-style: italic;
+    opacity: 0.8;
   }
 
   img {
@@ -147,6 +147,10 @@ const darkTheme = css`
   a:hover {
     color: black;
     background: ${colors.yellow};
+  }
+
+  blockquote {
+    border-color: white;
   }
 `
 
