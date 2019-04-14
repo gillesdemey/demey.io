@@ -18,13 +18,7 @@ const sansSerif = 'Domine'
 const link = css`
   color: inherit;
   text-decoration: none;
-  /* background: linear-gradient(120deg, #FFEB3B 0%, #FFEB3B 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0 88%; */
   border-bottom: solid 2px ${colors.yellow};
-  /* text-decoration: underline; */
-  /* text-decoration-color: ${colors.yellow}; */
 
   &:hover {
     /* code link  */

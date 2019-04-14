@@ -78,6 +78,10 @@ const base = css`
   .footnotes {
     font-size: 0.85em;
     p { display: inline-block; margin: 0.2em 0; }
+
+    hr {
+      margin-bottom: 2rem;
+    }
   }
 
   .footnote-ref {
@@ -103,7 +107,7 @@ const date = css`
 `
 
 const florette = css`
-  margin: 3rem 0;
+  margin: 2rem 0;
 
   color: rgba(0, 0, 0, 0.1);
 `
@@ -112,7 +116,7 @@ const nextPrevious = css`
   display: flex;
   align-items: center;
   width: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 `
 
 const prevOrNext = css`
@@ -131,8 +135,24 @@ const next = css`
   > a { align-self: flex-end; }
 `
 
+const darkTheme = css`
+  code {
+    ${gradientBackground(colors.linearGradient)};
+  }
+
+  hr {
+    border-color: ${colors.yellow};
+  }
+
+  a:hover {
+    color: black;
+    background: ${colors.yellow};
+  }
+`
+
 export {
   base,
+  darkTheme,
   title,
   date,
   florette,

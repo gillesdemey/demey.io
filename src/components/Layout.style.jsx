@@ -13,6 +13,19 @@ const wrapper = css`
   }
 `
 
+const globalStyle = css`
+  body, html {
+    font-size: 16px;
+  }
+`
+
+const globalDark = css`
+  body {
+    background: black;
+    color: #fff;
+  }
+`
+
 export {
-  base, wrapper
+  base, wrapper, globalStyle, globalDark
 }
