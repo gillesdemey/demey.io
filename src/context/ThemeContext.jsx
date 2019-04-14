@@ -1,7 +1,5 @@
 import React from 'react'
 
-const localStorage = window.localStorage
-
 const defaultState = {
   dark: false,
   toggleDark: () => {}
