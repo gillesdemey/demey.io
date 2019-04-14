@@ -41,7 +41,7 @@ class ThemeProvider extends React.Component {
       <ThemeContext.Provider
         value={{
           dark,
-          toggleDark: this.toggleDark
+          toggleDark: () => this.toggleDark()
         }}
       >
         {children}
