@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import Layout from './Layout'
 import Head from './Head'
 import { postItem, date as dateStyle, wrapper, title as postTitle } from './List.styles'
+import { colors, textClip } from '../shared.styles.jsx'
 
 class BlogIndex extends React.Component {
   render () {
@@ -32,7 +33,7 @@ class BlogIndex extends React.Component {
                   </Link>
                 </h3>
                 <small css={dateStyle}>
-                  Written by {author} on {date}
+                  Written by <span css={textClip(colors.linearGradient)}>{author}</span> on {date}
                 </small>
                 <p dangerouslySetInnerHTML={{ __html: teaser || node.exerpt }} />
               </div>

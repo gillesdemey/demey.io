@@ -1,5 +1,6 @@
 import { css } from '@emotion/core'
 import { link, textClip, colors, gradientBackground, serif, sansSerif } from '../shared.styles.jsx'
+import { tint } from 'polished'
 
 const base = css`
   font-size: 1em;
@@ -56,14 +57,14 @@ const base = css`
     font-weight: normal;
     background: none;
     font-size: 15px;
+    color: white;
   }
 
   blockquote {
     margin-left: 0;
     padding-left: 1em;
-    border-left: solid 5px rgba(0, 0, 0, 0.1);
+    border-left: solid 5px ${colors.yellow};
     font-style: italic;
-    opacity: 0.8;
   }
 
   img {
@@ -121,7 +122,7 @@ const nextPrevious = css`
 
 const prevOrNext = css`
   ${textClip(colors.linearGradient)};
-  font-family: 'Merriweather';
+  font-family: ${serif};
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -137,7 +138,8 @@ const next = css`
 
 const darkTheme = css`
   code {
-    ${gradientBackground(colors.linearGradient)};
+    ${gradientBackground(`linear-gradient(to right, ${tint(0.25, colors.gradient1)}, ${tint(0.25, colors.gradient2)})`)};
+    color: black;
   }
 
   hr {
@@ -147,10 +149,6 @@ const darkTheme = css`
   a:hover {
     color: black;
     background: ${colors.yellow};
-  }
-
-  blockquote {
-    border-color: white;
   }
 `
 

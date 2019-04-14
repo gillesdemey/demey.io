@@ -9,7 +9,9 @@ const colors = {
   lightYellow: '#ffeaa7',
   lightBlue: 'rgba(206, 246, 255, 1)',
   lightLinearGradient: `linear-gradient(to right, ${tint(0.85, gradient1)}, ${tint(0.85, gradient2)})`,
-  linearGradient: `linear-gradient(to right, ${gradient1}, ${gradient2})`
+  linearGradient: `linear-gradient(to right, ${gradient1}, ${gradient2})`,
+  gradient1,
+  gradient2
 }
 
 const serif = 'Montserrat'

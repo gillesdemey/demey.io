@@ -16,6 +16,7 @@ const wrapper = css`
 const globalStyle = css`
   body, html {
     font-size: 16px;
+    -webkit-font-smoothing: antialiased;
   }
 `
 
