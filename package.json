@@ -13,14 +13,14 @@
     "emotion-server": "^10.0.3",
     "emotion-theming": "^10.0.10",
     "gatsby": "^2.0.19",
-    "gatsby-plugin-emotion": "^3.0.0",
+    "gatsby-plugin-emotion": "^4.1.21",
     "gatsby-plugin-feed": "^2.0.8",
     "gatsby-plugin-google-analytics": "^2.0.5",
-    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-offline": "^3.0.33",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sharp": "^2.0.6",
     "gatsby-remark-copy-linked-files": "^2.0.5",
-    "gatsby-remark-images": "^2.0.4",
+    "gatsby-remark-images": "^3.1.43",
     "gatsby-remark-numbered-footnotes": "^1.0.0",
     "gatsby-remark-prismjs": "^3.0.0",
     "gatsby-remark-smartypants": "^2.0.5",
@@ -34,10 +34,10 @@
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
-    "eslint": "^5.9.0",
+    "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.11.1",
-    "gh-pages": "^1.2.0",
-    "standard": "^12.0.1"
+    "gh-pages": "^2.2.0",
+    "standard": "^14.3.1"
   },
   "homepage": "https://demey.io",
   "license": "MIT",
