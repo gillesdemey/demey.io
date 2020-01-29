@@ -8,18 +8,18 @@ module.exports = {
   pathPrefix: '/',
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
         name: 'pages'
       }
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 590
             }
@@ -36,17 +36,17 @@ module.exports = {
         ]
       }
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
         // trackingId: `ADD YOUR TRACKING ID HERE`,
       }
     },
-    `gatsby-plugin-feed`,
-    `gatsby-plugin-emotion`,
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`
+    'gatsby-plugin-feed',
+    'gatsby-plugin-emotion',
+    'gatsby-plugin-offline',
+    'gatsby-plugin-react-helmet'
   ]
 }

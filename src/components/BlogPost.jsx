@@ -46,17 +46,15 @@ class BlogPostTemplate extends React.Component {
             <div css={nextPrevious}>
               <div css={[prevOrNext, previousStyle]}>
                 {previous &&
-                <Link to={previous.fields.slug} rel='prev'>
+                  <Link to={previous.fields.slug} rel='prev'>
                   ← {previous.frontmatter.title}
-                </Link>
-                }
+                  </Link>}
               </div>
               <div css={[prevOrNext, nextStyle]}>
                 {next &&
-                <Link to={next.fields.slug} rel='next'>
-                  {next.frontmatter.title} →
-                </Link>
-                }
+                  <Link to={next.fields.slug} rel='next'>
+                    {next.frontmatter.title} →
+                  </Link>}
               </div>
             </div>
           </Layout>

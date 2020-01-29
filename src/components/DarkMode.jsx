@@ -1,3 +1,4 @@
+import React from 'react'
 import ThemeContext from '../context/ThemeContext'
 import { base, dark, light } from './DarkMode.styles.jsx'
 

@@ -9,7 +9,7 @@ export default ({ title }) => (
     {theme => (
       <div>
         <h1 css={[base, theme.dark && dark]}>
-          <Link to={'/'}>
+          <Link to='/'>
             {title}
           </Link>
         </h1>

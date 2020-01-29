@@ -1,3 +1,4 @@
+import React from 'react'
 import { ThemeProvider } from './src/context/ThemeContext'
 require('./src/utils/prism.css')
 
