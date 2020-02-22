@@ -17,7 +17,16 @@ class BlogPostTemplate extends React.Component {
 
     const { title, author, date, teaser, cover } = post.frontmatter
 
-    console.log({cover});
+    const metaTags = [
+      { name: 'description', content: siteDescription },
+      { property: 'og:type', content: 'article' },
+      { property: 'article:published_time', content: date },
+      { property: 'article:author', content: author },
+      { property: 'og:title', content: title },
+      { property: 'og:description', content: teaser }
+    ]
+
+    if (cover) metaTags.push({ property: 'og:image', content: cover.childImageSharp.fixed.src })
 
     return (
       <ThemeContext.Consumer>
@@ -25,15 +34,7 @@ class BlogPostTemplate extends React.Component {
           <Layout location={this.props.location} title={siteTitle}>
             <Helmet
               htmlAttributes={{ lang: 'en' }}
-              meta={[
-                { name: 'description', content: siteDescription },
-                { property: 'og:type', content: 'article' },
-                { property: 'og:image', content: cover.childImageSharp.fixed.src },
-                { property: 'article:published_time', content: date },
-                { property: 'article:author', content: author },
-                { property: 'og:title', content: title },
-                { property: 'og:description', content: teaser }
-              ]}
+              meta={metaTags}
               title={`${title} | ${siteTitle}`}
             />
             <Head />
