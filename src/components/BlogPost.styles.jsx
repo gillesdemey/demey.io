@@ -46,6 +46,10 @@ const base = css`
     line-height: 1.5em;
   }
 
+  table {
+    width: 100%;
+  }
+
   /* inline code and code block styles */
   code {
     ${gradientBackground(colors.lightLinearGradient)};

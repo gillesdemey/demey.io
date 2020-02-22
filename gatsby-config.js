@@ -3,7 +3,7 @@ module.exports = {
     title: 'Gilles & Michiel De Mey',
     author: 'Gilles & Michiel De Mey',
     description: 'The personal blog of the digital twins',
-    siteUrl: 'https://gatsby-starter-blog-demo.netlify.com/'
+    siteUrl: 'https://demey.io/'
   },
   pathPrefix: '/',
   plugins: [
@@ -21,7 +21,8 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 590
+              maxWidth: 650,
+              withWebp: true
             }
           },
           {
@@ -38,12 +39,6 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        // trackingId: `ADD YOUR TRACKING ID HERE`,
-      }
-    },
     'gatsby-plugin-feed',
     'gatsby-plugin-emotion',
     'gatsby-plugin-offline',
