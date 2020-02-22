@@ -1,7 +1,7 @@
 ---
 title: "The importance of accurate Geospatial visualization"
 author: Michiel De Mey
-date: "2020-02-16T14:00:00Z"
+date: "2020-02-22T16:00:00Z"
 teaser: "How many people live within a 5-minute walk from a bus stop? A seemingly simple question, yet one that requires a bit more thought and consideration as well as processing power."
 ---
 
