@@ -188,7 +188,7 @@ In my opinion, they should just stick to using the familiar lat/long coordinates
 Interestingly, when I change a few parameters in the API requests I get a SOAP related error which leads me to believe that they've written an API gateway to do the actual conversion from SOAP to a more RESTful interface. I hope this is a trend that we'll see more in the future, out with the ugly SOAP interfaces and in with the modern RESTful APIs!
 
 Here's the error in case you're wondering:
-```no-highlight
+```
 Error 500: javax.xml.ws.soap.SOAPFaultException: An internal error occured in the Reisinfo service
 ```
 

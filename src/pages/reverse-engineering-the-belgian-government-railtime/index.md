@@ -117,7 +117,7 @@ Luckily I know a thing or two about security.
 
 Upon inspecting the request headers we can clearly see that they use OAuth 1.0
 
-```hljs nohighlight
+```
 OAuth oauth_consumer_key="IPhone", oauth_nonce="97E5B889-E4BC-4973-B2BC-944E154CA2E3", oauth_signature="PjUdYBkMC0nmC%2F9yhrPIuV7COUg%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1407905853", oauth_version="1.0"
 ```
 
@@ -240,7 +240,7 @@ While in truth it's not.
 
 In reality they have awkwardly named URLs that look like function definitions.
 
-```hljs nohighlight
+```
 /PublicCommunicationRestService.svc/RetrieveStationSchedule
 /PublicCommunicationRestService.svc/RetrieveTrainSchedule
 /PublicCommunicationRestService.svc/RetrieveInfoMessagesForSmartPhone
@@ -278,7 +278,7 @@ So not specifying the charset will result in my browser decoding the JSON as suc
 
 To fix this, you simply specify the charset along with your Content-Type header:
 
-```hljs nohighlight
+```
 Content-Type: application/json; charset=utf-8
 ```
 
@@ -340,7 +340,7 @@ A good library to deal with Dates is [Moment.js](http://momentjs.com/). I highly
 
 ### 5. They pass the language as a url parameter
 
-```hljs nohighlight
+```
 /RetrieveInfoMessagesForSmartPhone?language=3
 ```
 
