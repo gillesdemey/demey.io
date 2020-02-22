@@ -14,8 +14,8 @@ const colors = {
   gradient2
 }
 
-const serif = 'Montserrat'
-const sansSerif = 'Domine'
+const sansSerif = 'Montserrat, sans-serif'
+const serif = 'Domine, serif'
 
 const link = css`
   color: inherit;

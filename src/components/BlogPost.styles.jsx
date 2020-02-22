@@ -5,11 +5,11 @@ import { tint } from 'polished'
 const base = css`
   font-size: 1em;
   line-height: 1.6em;
-  font-family: ${sansSerif};
+  font-family: ${serif};
   overflow-wrap: break-word;
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: ${serif};
+    font-family: ${sansSerif};
     ${textClip(colors.linearGradient)};
   }
 
@@ -100,7 +100,7 @@ const base = css`
 
 const title = css`
   font-size: 3.2em;
-  font-family: ${serif};
+  font-family: ${sansSerif};
   margin-bottom: 0;
 `
 
@@ -108,7 +108,7 @@ const date = css`
   margin: 0.5em 0;
   font-size: 0.85em;
 
-  font-family: ${serif};
+  font-family: ${sansSerif};
   font-weight: 900;
 `
 
@@ -127,7 +127,7 @@ const nextPrevious = css`
 
 const prevOrNext = css`
   ${textClip(colors.linearGradient)};
-  font-family: ${serif};
+  font-family: ${sansSerif};
   flex: 1;
   display: flex;
   flex-direction: column;
