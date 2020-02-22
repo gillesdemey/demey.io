@@ -15,7 +15,9 @@ class BlogPostTemplate extends React.Component {
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
 
-    const { title, author, date, teaser } = post.frontmatter
+    const { title, author, date, teaser, cover } = post.frontmatter
+
+    console.log({cover});
 
     return (
       <ThemeContext.Consumer>
@@ -26,6 +28,7 @@ class BlogPostTemplate extends React.Component {
               meta={[
                 { name: 'description', content: siteDescription },
                 { property: 'og:type', content: 'article' },
+                { property: 'og:image', content: cover.childImageSharp.fixed.src },
                 { property: 'article:published_time', content: date },
                 { property: 'article:author', content: author },
                 { property: 'og:title', content: title },
@@ -83,6 +86,13 @@ export const pageQuery = graphql`
         author
         date(formatString: "MMMM DD, YYYY")
         teaser
+        cover {
+          childImageSharp {
+            fixed(width: 500, quality: 100) {
+              ...GatsbyImageSharpFixed_noBase64
+            }
+          }
+        }
       }
     }
   }

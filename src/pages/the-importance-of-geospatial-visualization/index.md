@@ -2,6 +2,7 @@
 title: "The importance of accurate Geospatial visualization"
 author: Michiel De Mey
 date: "2020-02-22T16:00:00Z"
+cover: "./assets/accurate-scenario.png"
 teaser: "How many people live within a 5-minute walk from a bus stop? A seemingly simple question, yet one that requires a bit more thought and consideration as well as processing power."
 ---
 
@@ -53,7 +54,7 @@ As we can see from the comparison image, the isochrone generated from the walkin
 # Final thoughts
 If we overlay both the naive method and the more accurate isochrones method on top of Ghent we can clearly see a difference in total coverage.
 
-<iframe frameBorder="0" width="100%" height="400px" style="width: 100%; height: 400px;" src="https://api.mapbox.com/styles/v1/michieldemey/ck6tr50uw0xpy1is0vu9k4nvf.html?fresh=true&title=false&zoomwheel=false&access_token=pk.eyJ1IjoibWljaGllbGRlbWV5IiwiYSI6ImNGcVByV1EifQ.iM9H-e2tB6MzycvLMXJOMw#12.51/51.04457/3.71517"></iframe>
+<iframe frameBorder="0" width="500" height="500" src="https://api.mapbox.com/styles/v1/michieldemey/ck6tr50uw0xpy1is0vu9k4nvf.html?fresh=true&title=false&zoomwheel=false&access_token=pk.eyJ1IjoibWljaGllbGRlbWV5IiwiYSI6ImNGcVByV1EifQ.iM9H-e2tB6MzycvLMXJOMw#12.51/51.04457/3.71517"></iframe>
 
 Furthermore, reachability gaps start to show within the city. This is exactly the kind of visualization we want to see since it now allows you to focus on those gaps which allows urban planners to optimize their overall service and bring customer satisfaction in terms of reachability to the next level.
 

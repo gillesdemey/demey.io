@@ -18,6 +18,7 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          `gatsby-remark-responsive-iframe`,
           {
             resolve: 'gatsby-remark-external-links',
             options: {
@@ -30,8 +31,12 @@ module.exports = {
             options: {
               maxWidth: 650,
               withWebp: false,
-              quality: 80
+              quality: 80,
+              linkImagesToOriginal: false
             }
+          },
+          {
+            resolve: `gatsby-remark-images-medium-zoom`
           },
           {
             resolve: 'gatsby-remark-prismjs',
