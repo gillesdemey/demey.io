@@ -71,7 +71,7 @@ If you're interested in how I created these visualizations, feel free to send me
 
 Name | Description
 ---- | ----
-[De Lijn Bus stops in Belgium]([https://opendata.vlaanderen.be/dataset/haltes-vlaamse-vervoersmaatschappij-de-lijn-toestand-27-01-2020/resource/103f51b5-5510-40bf-a3a6-329531d5003f](https://opendata.vlaanderen.be/dataset/haltes-vlaamse-vervoersmaatschappij-de-lijn-toestand-27-01-2020/resource/103f51b5-5510-40bf-a3a6-329531d5003f)) | Geoset of all De Lijn bus stops in Belgium
+[De Lijn Bus stops in Belgium](https://opendata.vlaanderen.be/dataset/haltes-vlaamse-vervoersmaatschappij-de-lijn-toestand-27-01-2020/resource/103f51b5-5510-40bf-a3a6-329531d5003f) | Geoset of all De Lijn bus stops in Belgium
 [Official borders of Ghent](https://datatank.stad.gent/4/grondgebied/grenzengent) | Used to filter bus stops for Ghent
 [OpenStreetMap dataset of Belgium](https://download.geofabrik.de/europe/belgium.html) | Used by OSRM
 
